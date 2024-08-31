@@ -8,7 +8,7 @@ ALLOWED_HOSTS = [
     ".newmakorea.com",
     '117.52.84.176',
     '.youngwon.site',
-    'http://114.108.153.117/'
+    '114.108.153.117',
 ]
 
 DATABASES = {
