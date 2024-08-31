@@ -3,7 +3,7 @@ Description=uWSGI service
 After=syslog.target
 
 [Service]
-ExecStart=/home/nagyeong/myvenv/bin/uwsgi -i /srv/newma_gabia/project_/.config/uwsgi/project_.ini
+ExecStart=/home/nagyeong/myvenv/bin/uwsgi -i /srv/newma_gabia/.config/uwsgi/project_.ini
 
 Restart=always
 KillSignal=SIGQUIT
