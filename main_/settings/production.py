@@ -11,17 +11,24 @@ ALLOWED_HOSTS = [
     '114.108.153.117'
 ]
 
-# PostgreSQL이나 MySQL을 배포 환경에서 사용
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'newmadb',
-        'USER': 'main',
-        'PASSWORD': 'qpqp1234',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'newmadb.sqlite3',
     }
 }
+
+# PostgreSQL이나 MySQL을 배포 환경에서 사용
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'newmadb',
+#         'USER': 'main',
+#         'PASSWORD': 'qpqp1234',
+#         'HOST': 'localhost',
+#         'PORT': '3306',
+#     }
+# }
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
