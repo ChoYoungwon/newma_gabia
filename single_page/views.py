@@ -214,7 +214,7 @@ class UserPasswordResetView(FormView):
                 email = EmailMultiAlternatives(
                     subject,
                     plain_message,
-                    'lka1116@naver.com',
+                    'dnforl2004@naver.com',
                     [user.email],
                 )
                 email.attach_alternative(html_message, "text/html")

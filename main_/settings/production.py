@@ -7,8 +7,7 @@ ALLOWED_HOSTS = [
     ".newmatestul.store",
     ".newmakorea.com",
     '117.52.84.176',
-    '.youngwon.site',
-    '114.108.153.117'
+    '.youngwon.site'
 ]
 
 DATABASES = {
