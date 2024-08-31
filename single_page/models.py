@@ -51,7 +51,7 @@ class Authsms(TimeStampedModel):
 
         data = {
             'to': self.phone_number,
-            'from': '01098012501',
+            'from': '010-8815-3164',
             'text': '[뉴마] 인증 번호 [{}]를 입력해주세요.'.format(self.auth_number)
         }
         cool = Message(api_key, api_secret)
