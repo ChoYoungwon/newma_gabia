@@ -1,16 +1,8 @@
 from .base import *
 
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = [
-    ".ap-northeast-2.compute.amazonaws.com",
-    ".newmatestul.store",
-    ".newmakorea.com",
-    '117.52.84.176',
-    '.youngwon.site',
-    '114.108.153.117',
-    '45.115.154.186'
-]
+ALLOWED_HOSTS = ['*']
 
 DATABASES = {
     'default': {
