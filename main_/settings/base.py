@@ -4,24 +4,12 @@ from django.core.exceptions import ImproperlyConfigured
 
 #디렉토리 경로 설정
 #서버 열 때 static 폴더를 잘 불러오기 위해 이 경로가 필요
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 #보안 키를 숨기기 위해 json에 저장
 #깃허브에 업로드 시, 깃 이그노어에 secrets.json 추가 후 푸쉬
 #배포할 때, project_ 폴더 안에 secrets.json 을 만들어야 접근 가능
 secret_file = os.path.join(BASE_DIR, 'secrets.json')
-
-DEBUG = True
-
-ALLOWED_HOSTS = ['*']
-
-# SQLite를 로컬 개발 환경에서 사용
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'newmadb.sqlite3',
-    }
-}
 
 with open(secret_file) as f:
     secrets = json.loads(f.read())
