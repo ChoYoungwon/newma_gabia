@@ -9,6 +9,7 @@ ALLOWED_HOSTS = [
     '117.52.84.176',
     '.youngwon.site',
     '114.108.153.117',
+    '45.115.154.186'
 ]
 
 DATABASES = {
