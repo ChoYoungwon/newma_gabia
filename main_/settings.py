@@ -13,7 +13,7 @@ secret_file = os.path.join(BASE_DIR, 'secrets.json')
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '114.108.153.117']
+ALLOWED_HOSTS = ['*']
 
 # SQLite를 로컬 개발 환경에서 사용
 DATABASES = {
