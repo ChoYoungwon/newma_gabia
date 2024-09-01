@@ -11,6 +11,18 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 #배포할 때, project_ 폴더 안에 secrets.json 을 만들어야 접근 가능
 secret_file = os.path.join(BASE_DIR, 'secrets.json')
 
+DEBUG = True
+
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '114.108.153.117']
+
+# SQLite를 로컬 개발 환경에서 사용
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'newmadb.sqlite3',
+    }
+}
+
 with open(secret_file) as f:
     secrets = json.loads(f.read())
 
